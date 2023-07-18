@@ -48,3 +48,31 @@ EDA and data wrangling shared a box. This is because they are closely tied:
 - Data needs to be prepped before EDA.
 - Visualizations that are created during EDA may indicate the need for additional data cleaning.
 - Data wrangling uses summary statistics to look for potential data issues, while EDA uses them to understand the data. Improper cleaning will distort the findings when we're conducting EDA. In addition, data wrangling skills will be required to get summary statistics across subsets of the data.
+
+Drawing conclusions
+After we have collected the data for our analysis, cleaned it up, and performed some thorough EDA, it is time to draw conclusions. This is where we summarize our findings from EDA and decide the next steps:
+
+- Did we notice any patterns or relationships when visualizing the data?
+- Does it look like we can make accurate predictions from our data? Does it make sense to move to modeling the data?
+Should we handle missing data points? How?
+- How is the data distributed?
+- Does the data help us answer the questions we have or give insight into the problem we are investigating?
+- Do we need to collect new or additional data?
+
+
+Statistical foundations
+When we want to make observations about the data we are analyzing, we often, if not always, turn to statistics in some fashion. The data we have is referred to as the sample, which was observed from (and is a subset of) the population. Two broad categories of statistics are descriptive and inferential statistics. With descriptive statistics, as the name implies, we are looking to describe the sample. Inferential statistics involves using the sample statistics to infer, or deduce, something about the population, such as the underlying distribution.
+
+IMPORTANT NOTE
+
+Sample statistics are used as estimators of the population parameters, meaning that we have to quantify their bias and variance. There is a multitude of methods for this; some will make assumptions on the shape of the distribution (parametric) and others won't (non-parametric). This is all well beyond the scope of this book, but it is good to be aware of.
+
+
+Sampling
+There's an important thing to remember before we attempt any analysis: our sample must be a random sample that is representative of the population. This means that the data must be sampled without bias (for example, if we are asking people whether they like a certain sports team, we can't only ask fans of the team) and that we should have (ideally) members of all distinct groups from the population in our sample (in the sports team example, we can't just ask men).
+
+
+Descriptive statistics
+We will begin our discussion of descriptive statistics with univariate statistics; univariate simply means that these statistics are calculated from one (uni) variable. Everything in this section can be extended to the whole dataset, but the statistics will be calculated per variable we are recording (meaning that if we had 100 observations of speed and distance pairs, we could calculate the averages across the dataset, which would give us the average speed and average distance statistics).
+
+Descriptive statistics are used to describe and/or summarize the data we are working with. We can start our summarization of the data with a measure of central tendency, which describes where most of the data is centered around, and a measure of spread or dispersion, which indicates how far apart values are.
